@@ -2,7 +2,7 @@
 session_start();
 header('location:signin.php');
 
-include("database.php");
+include 'database.php';
  
 $name = $_POST['user'];
 $pass = $_POST['pass'];
