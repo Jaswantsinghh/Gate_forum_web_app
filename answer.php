@@ -15,18 +15,7 @@
             <div class="jumbotron">
                 <h3 style="text-align: center">ANSWER</h3>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "Gatelogin";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+include 'database.php';
 $name = $_POST['id'];
 
 $sql = "SELECT id, que, name, email FROM questionaddition WHERE id = '$name'";
