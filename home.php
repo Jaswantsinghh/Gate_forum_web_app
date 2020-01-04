@@ -30,18 +30,7 @@ if (!isset($_SESSION['username'])) {
             <div class="jumbotron">
                 <h3 style="text-align: center"><b><i><u>Questions & Answers</u></i></b></h3>
                 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "Gatelogin";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+include 'database.php';
 $sql = "SELECT id, que, name, email FROM questionaddition";
 $result = $conn->query($sql);
 
