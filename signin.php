@@ -17,6 +17,7 @@
                 <br>
                 <input type="submit" name="" value="Login">
                 <a href="signup.php">Create Account</a>
+                <a href="forgot.php">Forgot Password</a>
         </form>
             
         </div>
