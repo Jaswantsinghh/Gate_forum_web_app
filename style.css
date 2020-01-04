@@ -1,0 +1,28 @@
+ body {
+ background-image: url("image/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg");
+     
+}
+
+h2 {
+  font-size: 120px;
+  font-weight: bold;
+    font-family: serif;
+    color: brown;
+    text-decoration-line: underline;
+}
+
+p {
+ font-weight: bold;
+     font-size: 39px;
+    color:black;
+}
+
+h4 {
+ font-weight: bold;
+     font-size: 70px;
+    color:green;
+}
+ 
+
+  
+
