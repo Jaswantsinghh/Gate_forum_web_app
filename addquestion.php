@@ -1,19 +1,6 @@
 <?php
 
-session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "Gatelogin";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-    echo "unsussessful connection";
-}
-
+include 'database.php';
 $question = $_POST['ques'];
 $qname = $_POST['nm'];
 $qmail = $_POST['mail'];
