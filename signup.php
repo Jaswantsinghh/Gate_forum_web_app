@@ -15,11 +15,11 @@
                 <lable>Password</lable>
                 <input type="password" name="pass" placeholder="Enter password" required>
                 <br>
-                <lable>Mobile</lable>
-                <input type="text" name="mobile" placeholder="Enter Mobile Number" required>
+                <label>Phone No.</label>
+                <input type="tel" name="pn" placeholder="Enter your phone number" required>
                 <br>
-                <lable>Security</lable>
-                <input type="text" name="security" placeholder="Enter Security 	Question" required>
+                <lable>Security question</lable>
+                <input type="text" name="sq" placeholder="Enter the security question" required>
                 <br>
                 <input type="submit" name="" value="Submit">
         </form>
