@@ -15,10 +15,10 @@
                 <br>
                 <input type="tel" name="pn" placeholder="Enter your phone number" required>
                 <br>
-                <input type="text" name="sq" placeholder="Your's First Pet name" required>
+                <input type="text" name="sq" placeholder="enter security question" required>
                 <br>
                 <input type="submit" name="" value="Submit">
-                 <a href="signin.php">Log In</a> 
+                
         </form>
             
         </div>
