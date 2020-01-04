@@ -11,7 +11,7 @@
         <form method="post" action="forgotpass.php">
                 <input type="text" name="user" placeholder="Enter username" required>
                 <br>
-                <input type="text" name="sq" placeholder="Your's First Pet name" required>
+                <input type="text" name="sq" placeholder="enter your security question" required>
                 <br>
                 <input type="submit" name="submit" value="Continue">
         </form>   
