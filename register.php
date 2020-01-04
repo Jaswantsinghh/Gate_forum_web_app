@@ -1,6 +1,5 @@
 <?php
 session_start();
-header('location:signin.php');
 
 include 'database.php';
  
@@ -19,6 +18,7 @@ if ($num == 1) {
 } else {
 	$qy = "insert into signin(username,password,mobile,security) values ('$name','$pass','$mob','$secu')";
 	mysqli_query($conn,$qy);
+	header('location:signin.php');
 	 
 }
 ?>
