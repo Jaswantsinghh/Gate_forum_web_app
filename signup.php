@@ -9,19 +9,16 @@
         <img src="image/dribbble.jpg" class="avtar">
         <h1>SIGN UP HERE</h1>
         <form method="post" action="register.php">
-                <lable>Username</lable>
                 <input type="text" name="user" placeholder="Enter username" required>
                 <br>
-                <lable>Password</lable>
                 <input type="password" name="pass" placeholder="Enter password" required>
                 <br>
-                <label>Phone No.</label>
                 <input type="tel" name="pn" placeholder="Enter your phone number" required>
                 <br>
-                <lable>Security question</lable>
-                <input type="text" name="sq" placeholder="Enter the security question" required>
+                <input type="text" name="sq" placeholder="Your's First Pet name" required>
                 <br>
                 <input type="submit" name="" value="Submit">
+                 <a href="signin.php">Log In</a> 
         </form>
             
         </div>
