@@ -11,7 +11,7 @@ $secu  = $_POST['sq'];
 
 $sql = "INSERT INTO signin (username,password,mobile,security)
 VALUES ('$name', '$pass','$mob','$secu')";
-$q = "select * from signin where username = '$name' && password = '$pass'";
+$q = "select * from signin where username = '$name'";
 $result = mysqli_query($conn,$q);
 $num = mysqli_num_rows($result);
 if ($num == 1) {
