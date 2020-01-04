@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 04, 2020 at 11:32 AM
+-- Generation Time: Jan 04, 2020 at 02:32 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -82,16 +82,18 @@ INSERT INTO `questionaddition` (`id`, `que`, `name`, `email`) VALUES
 CREATE TABLE `signin` (
   `id` int(50) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(50) NOT NULL,
+  `mobile` bigint(20) NOT NULL,
+  `security` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `signin`
 --
 
-INSERT INTO `signin` (`id`, `username`, `password`) VALUES
-(1, 'vaibhav', 'shukla'),
-(2, 'vibhu', 'shukla');
+INSERT INTO `signin` (`id`, `username`, `password`, `mobile`, `security`) VALUES
+(1, 'vaibhav', 'shukla', 9865741236, 'what is your favorite book?'),
+(2, 'vibhu', 'shukla', 9999999999, 'what is your favorite sport?');
 
 --
 -- Indexes for dumped tables
