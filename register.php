@@ -15,7 +15,7 @@ $q = "select * from signin where username = '$name'";
 $result = mysqli_query($conn,$q);
 $num = mysqli_num_rows($result);
 if ($num == 1) {
-	echo "Try any other username or password";
+	echo "Try any other username";
 } else {
 	$qy = "insert into signin(username,password,mobile,security) values ('$name','$pass','$mob','$secu')";
 	mysqli_query($conn,$qy);
