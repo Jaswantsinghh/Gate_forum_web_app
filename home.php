@@ -26,9 +26,9 @@ if (!isset($_SESSION['username'])) {
     </nav>
      <br><br><br><br><br><br>
         <div class="container">
-            <h1  style="text-align: center"> <b><u>GATE QUESTION FORUM</u></b></h1>
-            <div class="jumbotron">
-                <h3 style="text-align: center"><b><i><u>Questions & Answers</u></i></b></h3>
+            <h1  style="text-align: center; color: blue;"> <b><u>GATE QUESTION FORUM</u></b></h1>
+            <div class="jumbotron" style="background-color: black;">
+                <h3 style="text-align: center; color: red;"><b><i><u>Questions & Answers</u></i></b></h3>
                 <?php
 include 'database.php';
 $sql = "SELECT id, que, name, email FROM questionaddition";
@@ -68,8 +68,8 @@ endwhile;
      ?><br><br>
                 
         <div class="container-fluid">
-            <ul class="nav navbar-nav " style="float:right; background: yellow;">
-                <li>USER: <?php echo $_SESSION['username']; ?></li>
+            <ul class="nav navbar-nav " style="float:right; background: yellow; border: solid; border-width: 5px; border-color: red; padding: 5px;">
+                <li style="margin-top: 15px;">USER: <?php echo $_SESSION['username']; ?></li>
                 <li><a href="logout.php"><b>LOGOUT</b></a></li>
             </ul>
         </div>
