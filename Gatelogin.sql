@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 04, 2020 at 02:32 PM
+-- Generation Time: Jan 06, 2020 at 02:27 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -43,8 +43,7 @@ CREATE TABLE `answers` (
 --
 
 INSERT INTO `answers` (`id`, `qid`, `answer`, `timerq`, `diff`, `name`, `email`) VALUES
-(1, 1, ' Graduate Aptitude Test Engineering', 1, 'Low', 'Vaibhav Shukla', 'vaibhav2017shukla@gmail.com'),
-(2, 1, ' Graduate Aptitude Test Engineering', 1, 'Low', 'vibhu', 'shukla2017vaibhav@gmail.com');
+(7, 31, ' Graduate Aptitude Test Engineering', 1, 'Low', 'Vaibhav Shukla', 'vibhu154@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -64,14 +63,8 @@ CREATE TABLE `questionaddition` (
 --
 
 INSERT INTO `questionaddition` (`id`, `que`, `name`, `email`) VALUES
-(1, 'what is the full form of GATE', 'vibhu', 'shukla2017vaibhav@gmail.com'),
-(2, 'what is the full form of GATE', 'Vaibhav Shukla', 'shukla2017vaibhav@gmail.com'),
-(3, 'who conduct gate ', 'vibhu', 'shukla2017vaibhav@gmail.com'),
-(4, 'what is gate', 'Vaibhav Shukla', 'shukla2017vaibhav@gmail.com'),
-(5, 'what is gate', 'Vaibhav Shukla', 'shukla2017vaibhav@gmail.com'),
-(6, 'WHAT DO YOU MEAN BY GATE', 'vaibhav', 'shukla@gmil.com'),
-(7, 'WHAT DO YOU MEAN BY GATE', 'vaibhav', 'shukla@gmil.com'),
-(8, 'what is gate', 'varun', 'shukla2017vaibhav@gmail.com');
+(31, 'What is the full form of GATE?', 'vibhu mishra', 'mishra@gmail.com'),
+(32, 'Who conduct GATE exam?', 'Vaibhav Shukla', 'vibhu154@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -83,6 +76,8 @@ CREATE TABLE `signin` (
   `id` int(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
+  `name` text NOT NULL,
+  `email` varchar(50) NOT NULL,
   `mobile` bigint(20) NOT NULL,
   `security` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -91,9 +86,10 @@ CREATE TABLE `signin` (
 -- Dumping data for table `signin`
 --
 
-INSERT INTO `signin` (`id`, `username`, `password`, `mobile`, `security`) VALUES
-(1, 'vaibhav', 'shukla', 9865741236, 'what is your favorite book?'),
-(2, 'vibhu', 'shukla', 9999999999, 'what is your favorite sport?');
+INSERT INTO `signin` (`id`, `username`, `password`, `name`, `email`, `mobile`, `security`) VALUES
+(7, 'vaibhav154', 'shukla', 'Vaibhav Shukla', 'vibhu154@gmail.com', 9876543210, 'what is your favorite book?'),
+(8, 'vibhu', 'shukla', 'vibhu shukla', 'vibhu@gmail.com', 9658741230, 'where do you live?'),
+(9, 'vibhushukla', 'shukla154', 'vibhu mishra', 'mishra@gmail.com', 9586487562, 'which is your favorite book?');
 
 --
 -- Indexes for dumped tables
@@ -125,19 +121,19 @@ ALTER TABLE `signin`
 -- AUTO_INCREMENT for table `answers`
 --
 ALTER TABLE `answers`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `questionaddition`
 --
 ALTER TABLE `questionaddition`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `signin`
 --
 ALTER TABLE `signin`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
