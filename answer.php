@@ -11,9 +11,9 @@
 <body style="background-color: #7FFF00">
 	 <br><br><br><br><br><br>
         <div class="container">
-            <h1  style="text-align: center"> <b>GATE QUESTION FORUM</b></h1>
-            <div class="jumbotron">
-                <h3 style="text-align: center">ANSWER</h3>
+            <h1  style="text-align: center; color: blue;"> <b><u>GATE QUESTION FORUM</u></b></h1>
+            <div class="jumbotron" style="background-color: black;">
+                <h3 style="text-align: center; color: red;"><b>ANSWER</b></h3>
 <?php
 include 'database.php';
 $name = $_POST['id'];
@@ -23,12 +23,12 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) 
         while($row = $result->fetch_assoc()) :?> 
-        <div class="bg-info">
+        <div class="bg-info" style="border: solid blue 5px; padding: 7px;">
             <form >
-                <br><b>* Question id:</b> <?php echo $row["id"]; ?> 
-                <br><b>* Question:</b> <?php echo $row["que"]; ?> 
-                <br><b>* Asked by:</b> <?php echo $row["name"]; ?> 
-                <br><b>* Email:</b> <?php echo $row["email"]; ?>   <br>
+                <br><b style="color: blue;">* Question id:</b> <?php echo $row["id"]; ?> 
+                <br><b style="color: blue;">* Question:</b> <?php echo $row["que"]; ?> 
+                <br><b style="color: blue;">* Asked by:</b> <?php echo $row["name"]; ?> 
+                <br><b style="color: blue;">* Email:</b> <?php echo $row["email"]; ?>   <br>
                 <br><br>
             </form>
         </div><br><br>
@@ -38,11 +38,11 @@ endwhile;
        
                 <form method="post" action="answeradd.php">
                     <div class ="form-group">
-                        <lable >Solution</lable>
+                        <lable style="color: blue;" ><b>Solution</b></lable>
                         <input type="text" class="form-control" placeholder="Enter the solution if you know" name="sol" required>
                     </div>
                     <div class ="form-group">
-                        <lable>Time Required In Minutes  </lable>
+                        <lable style="color: blue;"><b>Time Required In Minutes</b>  </lable>
                             <select name="tm" required>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -52,14 +52,14 @@ endwhile;
                             </select>
                     </div>
                     <div class ="form-group">
-                        <lable>Difficulty level</lable>
+                        <lable style="color: blue;"><b>Difficulty level</b></lable>
                         <select name="dif" required>
                             <option value="Low">Low</option>
                             <option value="Medium">Medium</option>
                             <option value="High">High</option>
                         </select>
                     </div> 
-                  <!--  <div class ="form-group">
+                   <!-- <div class ="form-group">
                         <lable>Your Name</lable>
                         <input type="text" name="nm" class="form-control" placeholder="Enter your name" required>
                     </div>
