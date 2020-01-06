@@ -1,12 +1,27 @@
 <?php
 
 include 'database.php';
+
+session_start();
+
+$u = $_SESSION['username'];
+
+$sql = "SELECT name, email FROM signin WHERE username = '$u'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) 
+        while($row = $result->fetch_assoc()) {
+        	$aname = $row["name"];
+			$amail = $row["email"];
+
+        }
+
 $name = $_POST['id'];
 $ans = $_POST['sol'];
 $time = $_POST['tm'];
 $di = $_POST['dif'];
-$aname = $_POST['nm'];
-$amail = $_POST['mail'];
+//$aname = $_POST['nm'];
+//$amail = $_POST['mail'];
 
 $sql = "INSERT INTO answers(qid,answer,timerq,diff,name,email) VALUES ('$name','$ans','$time','$di','$aname','$amail')";
 
