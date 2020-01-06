@@ -18,7 +18,7 @@
                        <lable>Question</lable>
                         <input type="text" name="ques" class="form-control" placeholder="Enter your question here" required>
                     </div>
-                 <--   <div class ="form-group">
+                 <!--   <div class ="form-group">
                         <lable>Your Name</lable>
                         <input type="text" name="nm" class="form-control" placeholder="Enter your name" required>
                     </div>
