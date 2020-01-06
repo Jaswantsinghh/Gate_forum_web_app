@@ -13,9 +13,13 @@
                 <br>
                 <input type="password" name="pass" placeholder="Enter password" required>
                 <br>
+                <input type="text" name="nm" placeholder="Enter your name" required>
+                <br>
+                <input type="text" name="email" placeholder="Enter your email" required>
+                <br>
                 <input type="tel" name="pn" placeholder="Enter your phone number" required>
                 <br>
-                <input type="text" name="sq" placeholder="enter security question" required>
+                <input type="text" name="sq" placeholder="Enter security question" required>
                 <br>
                 <input type="submit" name="" value="Submit">
                 
