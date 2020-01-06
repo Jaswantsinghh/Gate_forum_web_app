@@ -18,14 +18,14 @@
                        <lable>Question</lable>
                         <input type="text" name="ques" class="form-control" placeholder="Enter your question here" required>
                     </div>
-                    <div class ="form-group">
+                 <--   <div class ="form-group">
                         <lable>Your Name</lable>
                         <input type="text" name="nm" class="form-control" placeholder="Enter your name" required>
                     </div>
                     <div class ="form-group">
                         <lable >Your Email</lable>
                         <input type="email" name="mail" class="form-control" placeholder="Enter your email" required>
-                    </div>
+                    </div> -->
                     <button type="submit" class="btn btn-primary">ADD</button>
                 </form>
           </div>
