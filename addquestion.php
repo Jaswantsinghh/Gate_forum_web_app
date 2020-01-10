@@ -1,8 +1,7 @@
+<?php session_start(); ?>
 <?php
 
 include 'database.php';
-
-session_start();
 
 $u = $_SESSION['username'];
 
