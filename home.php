@@ -17,13 +17,13 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body style="background-color: #7FFF00">
-	<nav class="navbar navbar-inverse" >
+	<div style="position: fixed; width: 100%;" class="navbar navbar-inverse" >
         <div class="container-fluid">
             <ul class="nav navbar-nav bg-info" style="float:right">
                 <li><a href="question.php"><b>ASK QUESTION</b></a></li>
             </ul>
         </div>
-    </nav>
+    </div>
      <br><br><br><br><br><br>
         <div class="container">
             <h1  style="text-align: center; color: blue;"> <b><u>GATE QUESTION FORUM</u></b></h1>
